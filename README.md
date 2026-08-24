@@ -1,4 +1,4 @@
-# release-craft
+# release-craft: Honest Release Notes from Git History
 
 **Turn git history into honest, user-facing release notes in a dry run.**
 
@@ -8,9 +8,9 @@
 
 ```bash
 pipx install release-craft
-release-craft --from v0.3.0 --to HEAD
-release-craft --from v0.3.0 --to HEAD --format json > release.json
-release-craft --input commits.txt --output RELEASE_NOTES.md
+release_craft --from v0.3.0 --to HEAD
+release_craft --from v0.3.0 --to HEAD --format json > release.json
+release_craft --input commits.txt --output RELEASE_NOTES.md
 ```
 
 The generator is intentionally a draft assistant. Review the output, add migration notes when needed, then publish through your normal release process. GitHub’s own generated release notes remain a useful baseline; this tool is for local preview and more readable grouping.
